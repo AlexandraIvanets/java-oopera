@@ -13,4 +13,9 @@ public class Ballet extends MusicalShow {
         super(title, duration, director, musicAuthor, librettoText);
         this.choreographer = choreographer;
     }
+
+    @Override
+    public String getTypeName() {
+        return "ballet";
+    }
 }

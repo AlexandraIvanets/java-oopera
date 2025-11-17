@@ -11,4 +11,9 @@ public class Opera extends MusicalShow {
         super(title, duration, director, musicAuthor, librettoText);
         this.choirSize = choirSize;
     }
+
+    @Override
+    public String getTypeName() {
+        return "opera";
+    }
 }

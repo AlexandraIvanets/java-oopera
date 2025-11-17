@@ -65,7 +65,5 @@ public class Theatre {
         System.out.println(LINE_BREAKER);
         balletTheNutcracker.printLibrettoText();
         System.out.println(LINE_BREAKER);
-
-
     }
 }

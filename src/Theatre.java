@@ -9,7 +9,9 @@ public class Theatre {
     public static void main(String[] args) {
         Actor DiCaprio = new Actor("Leonardo", "DiCaprio", Gender.MALE, 181);
         Actor Kidman = new Actor("Nicole", "Kidman", Gender.FEMALE, 180);
-        Actor Hemsworth = new Actor("Chris", "Hemsworth", Gender.MALE, 190);
+        Actor Hemsworth = new Actor("Arnold", "Hemsworth", Gender.MALE, 190);
+        Actor Hemsworth2 = new Actor("Chris", "Hemsworth", Gender.MALE, 189);
+        Actor Hemsworth3 = new Actor("Den", "Hemsworth", Gender.MALE, 170);
         Director Bigelow = new Director("Kathryn", "Bigelow", Gender.FEMALE, 20);
         Director Scorsese = new Director("Martin", "Scorsese", Gender.MALE, 30);
         MusicAuthor Zimmer = new MusicAuthor("Hans", "Zimmer", Gender.MALE);
@@ -35,7 +37,7 @@ public class Theatre {
         showWe.addActor(Kidman);
         showWe.addActor(DiCaprio);
         operaCarmen.addActor(Hemsworth);
-        operaCarmen.addActor(DiCaprio);
+        operaCarmen.addActor(Hemsworth2);
         operaCarmen.addActor(Kidman);
         balletTheNutcracker.addActor(Hemsworth);
         balletTheNutcracker.addActor(Kidman);
@@ -64,6 +66,12 @@ public class Theatre {
         operaCarmen.printLibrettoText();
         System.out.println(LINE_BREAKER);
         balletTheNutcracker.printLibrettoText();
+        System.out.println(LINE_BREAKER);
+
+        System.out.println("Checking for replacement of actors with the same last name");
+        operaCarmen.printListOfActors();
+        operaCarmen.replaceActor(Hemsworth3, "Hemsworth");
+        operaCarmen.printListOfActors();
         System.out.println(LINE_BREAKER);
     }
 }

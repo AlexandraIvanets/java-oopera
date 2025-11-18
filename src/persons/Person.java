@@ -3,9 +3,9 @@ package persons;
 import java.util.Objects;
 
 public class Person {
-    protected final String name;
-    protected final String surname;
-    protected final Gender gender;
+    protected String name;
+    protected String surname;
+    protected Gender gender;
 
     public Person(String name, String surname, Gender gender) {
         this.name = name;
